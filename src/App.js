@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import 'antd/dist/antd.css';
 
+import Home from './views/Home'
+import Login from './views/Login'
+import BaoZao from './views/BaoZao';
+import JiaoLv from './views/JiaoLv';
+import More from './views/SetUp';
+import YaYi from './views/YaYi';
+import YouYu from './views/YouYu';
+import SearchResult from './views/SearchResult';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div id="app">
+        <Switch>
+          <Route path="/home" component={Home}></Route>
+          <Route path="/login" component={Login}></Route>
+          <Route path="/BaoZao" component={BaoZao}></Route>
+          <Route path="/JiaoLv" component={JiaoLv}></Route>
+          <Route path="/More" component={More}></Route>
+          <Route path="/YaYi" component={YaYi}></Route>
+          <Route path="/YouYu" component={YouYu}></Route>
+          <Route path="/SearchResult/:search" component={SearchResult}></Route>
+          <Redirect exact from="/" to="/home"></Redirect>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

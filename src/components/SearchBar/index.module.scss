@@ -1,0 +1,44 @@
+.input-wrap {
+  width: 654px;
+  height: 44px;
+  display: flex;
+  overflow: hidden;
+  input {
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #c4c7ce;
+    border-right: 0;
+    flex: 1;
+    outline: 0;
+    font: 16px/18px arial;
+    padding: 0 16px 0 10px;
+    &:hover{
+      border-color: #a7aab5;
+    }
+    &:focus{
+      border-color: #4e6ef2;
+    }
+  }
+  button{
+    display: block;
+    width: 108px;
+    height: 44px;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #4e6ef2;
+    outline: 0;
+    background-color: #4e6ef2;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    &:hover{
+      background-color: #4662d9;
+    }
+  }
+  &.small{
+    width: 672px;
+    height: 40px;
+    button{
+      width: 112px;
+      height: 40px;
+    }
+  }
+}
