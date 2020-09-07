@@ -93,7 +93,7 @@ export default class index extends Component {
             <li><a href="/">帮助中心</a></li>
         </ul>
         <ul className={styles['list-right']}>
-            <li><a href="/">©2020 Baidu</a></li>
+            <li><a href="/">©2020 Wangyi</a></li>
             <li><a href="/">(京)-经营性-2017-0020</a></li>
             <li><a href="/">京公网安备11000002000001号</a></li>
             <li><a href="/">京ICP证030173号</a></li>

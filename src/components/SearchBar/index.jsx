@@ -6,16 +6,17 @@ export default class index extends Component {
     super(props);
 
     this.state = {
-        searchContent:''
+        searchContent:this.props.defaultValue||''
     };
   }
   componentDidMount() {
     //   console.log(this.props.small);
   }
   handleClick = () => {
-    if (!this.state.searchContent) return;
-    console.log(this);
-    this.props.history.push(`/SearchResult/${this.state.searchContent}`);
+    if (!this.state.searchContent.trim()) return;
+    // console.log(this);
+    this.props.history.push(`/SearchResult/${this.state.searchContent.trim()}`);
+    window.location.reload()
   };
   handleChange = (e) => {
     this.setState({
@@ -37,6 +38,7 @@ export default class index extends Component {
       >
         <input
           type="text"
+          value={this.state.searchContent}
           onKeyUp={this.inputKeyUp}
           onChange={this.handleChange}
         />

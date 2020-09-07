@@ -11,6 +11,7 @@ import More from './views/SetUp';
 import YaYi from './views/YaYi';
 import YouYu from './views/YouYu';
 import SearchResult from './views/SearchResult';
+import MV from './views/MV';
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
           <Route path="/YaYi" component={YaYi}></Route>
           <Route path="/YouYu" component={YouYu}></Route>
           <Route path="/SearchResult/:search" component={SearchResult}></Route>
+          <Route path="/MV/:mvid" component={MV}></Route>
           <Redirect exact from="/" to="/home"></Redirect>
         </Switch>
       </div>
