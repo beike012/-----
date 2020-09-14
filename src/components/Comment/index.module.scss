@@ -1,0 +1,108 @@
+.comment-wrap {
+    .comment-title {
+      height: 33px;
+      border-bottom: 2px solid #c20c0c;
+      // margin-bottom: 20px;
+      h2 {
+        font-size: 20px;
+        line-height: 28px;
+        display: inline-block;
+      }
+      span {
+        font-size: 12px;
+        color: #666666;
+        margin-left: 20px;
+      }
+    }
+    .comment-sub-title {
+      height: 20px;
+      line-height: 20px;
+      border-bottom: 1px solid #cfcfcf;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .comment-hot {
+      font-size: 12px;
+      li {
+        padding: 15px 0;
+        display: flex;
+        align-items: flex-start;
+        border-top: 1px dotted #ccc;
+        &:first-child {
+          border-top: 0;
+        }
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        .comment-right {
+          margin-left: 10px;
+          flex: 1;
+          color: #666666;
+          p {
+            a {
+              margin-right: 5px;
+              color: #0c73c2;
+            }
+            &.beReplied {
+              padding: 8px 19px;
+              margin-top: 10px;
+              line-height: 20px;
+              background: #f4f4f4;
+              border: 1px solid #dedede;
+              position: relative;
+              span {
+                color: #dedede;
+                position: absolute;
+                top: -8px;
+                left: 20px;
+                font-size: 12px;
+                line-height: 14px;
+                i {
+                  position: absolute;
+                  &.bd {
+                    left: 0;
+                    top: 0;
+                  }
+                  &.bg {
+                    left: 0;
+                    top: 1px;
+                    color: #f4f4f4;
+                  }
+                }
+              }
+            }
+          }
+          .comment-right-foot {
+            display: flex;
+            justify-content: space-between;
+            .foot-left {
+              color: #999999;
+            }
+            .foot-right {
+              display: flex;
+              align-items: center;
+              .zan {
+                display: inline-block;
+                width: 15px;
+                height: 14px;
+                background: url('../../assets/img/icon2.png') no-repeat 0
+                  9999px;
+                background-position: -150px 0;
+              }
+              .line {
+                margin: 0 8px;
+                color: #ccc;
+              }
+              :global {
+                .displayNone {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
