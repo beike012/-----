@@ -94,9 +94,9 @@ export default class index extends Component {
         </ul>
         <ul className={styles['list-right']}>
             <li><a href="/">©2020 Wangyi</a></li>
-            <li><a href="/">(京)-经营性-2017-0020</a></li>
-            <li><a href="/">京公网安备11000002000001号</a></li>
-            <li><a href="/">京ICP证030173号</a></li>
+            <li><a href="/">(粤)-娱乐性-6666-7777</a></li>
+            <li><a href="/">粤公网安备23333333333号</a></li>
+            <li><a href="https://beian.miit.gov.cn/">粤ICP备19146970号</a></li>
         </ul>
 
         </div>
