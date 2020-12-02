@@ -15,11 +15,11 @@
       border-right: 1px solid rgb(211, 211, 211);
       padding: 24px 30px 40px 39px;
       .mv-title {
-        height: 32px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 8px;
+        // height: 32px;
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: center;
+        // margin-bottom: 8px;
         i {
           display: block;
           background: url('../../assets/img/icon2.png') no-repeat 0 9999px;
@@ -29,9 +29,8 @@
         }
         .mv-title-div {
           h2 {
-            margin: 0 8px 0;
+            margin: 0;
             font-size: 24px;
-            display: inline-block;
           }
           .mv-title-a {
             font-size: 12px;
@@ -66,6 +65,10 @@
           line-height: 18px;
           color: #999999;
           margin-bottom: 0;
+        }
+        .mv-right-description{
+          margin-top: 10px;
+          color: #333;
         }
       }
     }

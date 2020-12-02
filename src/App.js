@@ -12,6 +12,7 @@ import YaYi from './views/YaYi';
 import YouYu from './views/YouYu';
 import SearchResult from './views/SearchResult';
 import MV from './views/MV';
+import Video from './views/Video';
 function App() {
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/YouYu" component={YouYu}></Route>
           <Route path="/SearchResult/:search" component={SearchResult}></Route>
           <Route path="/MV/:mvid" component={MV}></Route>
+          <Route path="/Video/:id" component={Video}></Route>
           <Redirect exact from="/" to="/home"></Redirect>
         </Switch>
       </div>

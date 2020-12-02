@@ -1,0 +1,66 @@
+:global {
+  .mv-btn-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    .mv-btn {
+      display: inline-block;
+      background: url('~@/assets/img/button2.png') no-repeat 0 9999px;
+      background-position: right -100px;
+      padding-right: 4px;
+      margin-right: 10px;
+      text-decoration: none;
+      i {
+        display: inline-block;
+        height: 31px;
+        text-align: center;
+        font-size: 12px;
+        // overflow: hidden;
+        padding: 0 5px 0 10px;
+        background: url('~@/assets/img/button2.png') no-repeat 0 9999px;
+        background-position: 0 -59px;
+        display: flex;
+        align-items: center;
+        em {
+          display: inline-block;
+          width: 17px;
+          height: 15px;
+          margin: 0 6px 0 0;
+          background: url('~@/assets/img/button2.png') no-repeat 0
+            9999px;
+          &.icn-praise {
+            background-position: 0 -95px;
+          }
+        }
+      }
+      &:hover {
+        background-position: right -182px;
+        i {
+          background-position: 0 -141px;
+        }
+      }
+      &.fav {
+        i {
+          background-position: 0 -977px;
+          padding: 0 2px 0 28px;
+        }
+        &:hover {
+          i {
+            background-position: 0 -1063px;
+          }
+        }
+      }
+      &.share {
+        i {
+          background-position: 0 -1225px;
+          padding: 0 2px 0 28px;
+        }
+        &:hover {
+          i {
+            background-position: 0 -1268px;
+          }
+        }
+      }
+    }
+  }
+}

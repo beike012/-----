@@ -1,0 +1,64 @@
+.mv-right-wrap {
+  margin-bottom: 34px;
+  .mv-right-title {
+    font-weight: bold;
+    line-height: 23px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 18px;
+    color: #999999;
+    margin-bottom: 0;
+  }
+  .download-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    i {
+      height: 48px;
+      cursor: pointer;
+      background: url('~@/assets/img/sprite.png') no-repeat 0 9999px;
+    }
+    .ios {
+      width: 42px;
+      background-position: 0 -392px;
+      &:hover {
+        background-position: 0 -472px;
+      }
+    }
+    .windows {
+      width: 60px;
+      background-position: -72px -392px;
+      &:hover {
+        background-position: -72px -472px;
+      }
+    }
+    .android {
+      width: 42px;
+      background-position: -156px -392px;
+      &:hover {
+        background-position: -156px -472px;
+      }
+    }
+  }
+  .download-tips {
+    font-size: 12px;
+    color: #999999;
+  }
+  .code-wrap {
+    display: flex;
+    align-items: flex-end;
+    .code {
+      background: url('../../assets/img/sprite.png') no-repeat 0 9999px;
+      width: 72px;
+      height: 72px;
+      background-position: 0 -300px;
+    }
+    .code-text {
+      margin-left: 20px;
+      flex: 1;
+    }
+  }
+}
